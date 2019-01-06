@@ -1,0 +1,44 @@
+name = str(input("ют╥б"))
+name_list = name.split(' ')
+output = ""
+print(len(name_list))
+for i in range(len(name_list)):
+    if i == 0 or i == len(name_list)-1:
+        output += f" {name_list[i]}"
+    else:
+        output += f" {name_list[i][0]}."
+print(output)
+
+
+
+
+for i in range(1,13):
+    print(f'{f"{i}©Ы":^20}')
+    print("Mo Tu We Th Fr Sa Su")
+    if i == 4 or i == 6 or i == 9 or i == 11:
+        for j in range(1,31):
+            if j % 7 == 0:
+                print(j)
+            elif j < 10:
+                print(j, end = "  ")
+            else:
+                print(j, end = " ")
+    elif i == 2:
+        for j in range(1,29):
+            if j % 7 == 0:
+                print(j)
+            elif j < 10:
+                print(j, end = "  ")
+            else:
+                print(j, end = " ")
+    else:
+        for j in range(1,32):
+            if j % 7 == 0:
+                print(j)
+            elif j < 10:
+                print(j, end = "  ")
+            else:
+                print(j, end = " ")
+        
+    print("\n")        
+    
